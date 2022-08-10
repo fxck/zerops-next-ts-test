@@ -1,0 +1,9 @@
+app:
+  build:
+    base: [ nodejs@16 ]
+    build:
+      - yarn
+      - yarn build
+    deploy: [ '.next', 'node_modules', 'package.json' ]
+  run:
+    start: yarn start
