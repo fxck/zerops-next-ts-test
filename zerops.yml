@@ -4,6 +4,6 @@ app:
     build:
       - yarn
       - yarn build
-    deploy: [ '.next', 'node_modules', 'package.json' ]
+    deploy: [ '.next', 'next.config.js', 'node_modules', 'package.json' ]
   run:
     start: yarn start
